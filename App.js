@@ -22,3 +22,9 @@ setInterval(()=>{
 }, 1000)
 
 // calendar
+const day = document.getElementById('day');
+
+const today = new Date();
+const weekDays = [ 'یکشنبه', 'دوشنبه', 'سه شنبه', 'چهارشنبه', 'پنجشنبه', 'جمعه','شنبه',];
+
+day.innerHTML = weekDays[today.getDay()];
